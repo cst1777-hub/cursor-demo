@@ -1,5 +1,6 @@
-// RFC 5322 이메일 패턴 (emailregex.com, IP 옥텟 버그 수정)
-// https://stackoverflow.com/questions/201323/what-is-the-best-regular-expression-for-validating-email-addresses
+// RFC 5322 이메일 패턴 (emailregex.com 기반, IP 옥텟 버그 수정)
+// 참고: https://uibakery.io/regex-library/email (RFC 5322 compliant regex)
+//       https://stackoverflow.com/questions/201323/what-is-the-best-regular-expression-for-validating-email-addresses
 const RFC5322_EMAIL_REGEX = new RegExp(
   '^(?:' +
     "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*" +
